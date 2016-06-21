@@ -1,0 +1,16 @@
+".source.raml":
+  "RAML: Root":
+    prefix: "raml-root"
+    body: "#%RAML ${1:1.0}\ntitle: ${2:New} API\nversion: ${3:v1}\nbaseUri: ${4:http://api.samplehost.com}{version}"
+  "RAML: Protocols":
+    prefix: "raml-protocols"
+    body: "protocols:\n  - HTTP\n  - HTTPS"
+  "RAML: Media Type":
+    prefix: "raml-mediatype"
+    body: "mediaType:\n  - application/json"
+  "RAML: Security Schemes":
+    prefix: "raml-securityschemes"
+    body: "securitySchemes:\n  basic:\n    type: Basic Authentication\n    description: This API supports Basic Authentication."
+  "RAML: Secured By":
+    prefix: "raml-securedby"
+    body: "securedBy:\n  - basic"
